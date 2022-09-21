@@ -1,0 +1,12 @@
+{
+  "name": "slack-emoji-stats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "remeda": "^1.1.0"
+  }
+}

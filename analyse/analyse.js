@@ -22,8 +22,9 @@ const moreThan10 = userEmojiTuple
 const top10 = R.pipe(
     userEmojiTuple,
     R.sortBy((it) => it[1].length),
-    R.chunk(10),
-    R.last,
+    R.reverse,
+    R.take(10),
+    R.reverse,
     R.map(it => [userIdNameLookup.get(it[0]), it[1].length]),
 );
 
